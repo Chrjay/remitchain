@@ -1,0 +1,28 @@
+[package]
+name = "remitchain"
+version = "0.1.0"
+edition = "2021"
+description = "OFW remittance escrow with micro-savings on Stellar Soroban"
+license = "MIT"
+ 
+[lib]
+crate-type = ["cdylib", "rlib"]
+ 
+[dependencies]
+soroban-sdk = { version = "21.0.0" }
+ 
+[dev-dependencies]
+soroban-sdk = { version = "21.0.0", features = ["testutils"] }
+ 
+# ─── Wasm-optimised release profile ─────────────────────────────────────────
+[profile.release]
+opt-level = "z"        # Minimise binary size for Wasm deployment
+overflow-checks = true # Keep arithmetic safety checks in release
+debug = false
+debug-assertions = false
+codegen-units = 1      # Single codegen unit = smaller, faster Wasm
+lto = true             # Link-time optimisation
+ 
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true  # Re-enable for testnet debugging sessions
