@@ -169,7 +169,10 @@ remitchain/
 ```
  
 ---
- 
+
+## SAMPLE LINK OF CONTRACT ID
+https://stellar.expert/explorer/testnet/tx/9552c99123077b77ac0eca557ec22c6bd860678e0388d5d78763c1f3836bc707
+
 ## License
  
 MIT © 2026 RemitChain Contributors
