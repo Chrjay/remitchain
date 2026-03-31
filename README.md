@@ -173,6 +173,8 @@ remitchain/
 ## SAMPLE LINK OF CONTRACT ID
 https://stellar.expert/explorer/testnet/tx/9552c99123077b77ac0eca557ec22c6bd860678e0388d5d78763c1f3836bc707
 
+<img width="1427" height="626" alt="Contract_ID" src="https://github.com/user-attachments/assets/ebf4eee4-4174-4fd1-a09a-6df832796658" />
+
 ## License
  
 MIT © 2026 RemitChain Contributors
